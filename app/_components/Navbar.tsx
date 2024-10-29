@@ -1,6 +1,6 @@
 "use client"
 import { Button } from '@/components/ui/button'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Navbar = () => {
     const [open , setOPen] = useState(false) ;

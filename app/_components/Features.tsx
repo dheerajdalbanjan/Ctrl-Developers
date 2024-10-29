@@ -3,8 +3,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
-import React from 'react'
-
 const Features = () => {
     const features = [
         {

@@ -1,5 +1,4 @@
 import { StarFilledIcon } from '@radix-ui/react-icons'
-import React from 'react'
 
 const Numbers = () => {
   return (
