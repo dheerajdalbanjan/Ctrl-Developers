@@ -2,6 +2,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 
 const Features = () => {
     const features = [
@@ -42,7 +43,7 @@ const Features = () => {
           isExpanded: false
         }
       ];
-      const [expanded, setExpanded] = React.useState("1");
+      const [expanded, setExpanded] = useState("1");
       
     return (
         <div className='flex flex-col  sm:justify-between sm:items-start items-center gap-3 py-6 mx-4 max-w-7xl xl:mx-auto' >
