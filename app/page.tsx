@@ -9,7 +9,6 @@ import Work from "./_components/Work";
 export default function Home() {
   return (
     <main className="h-full w-full m-0">
-      <Navbar />
       <Hero />
       <hr  className="mx-4 max-w-6xl my-2 sm:mx-auto border-b-2 border-t-0 border-primary/40"/>
       <Mockup />

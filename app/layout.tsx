@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
+import Navbar from "./_components/Navbar";
+import Footer from "./_components/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -41,7 +43,9 @@ export default function RootLayout({
       <body
         className={`${space.className} antialiased bg-background `}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

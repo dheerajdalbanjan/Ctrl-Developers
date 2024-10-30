@@ -43,6 +43,9 @@ const Features = () => {
           isExpanded: false
         }
       ];
+
+
+      
       const [expanded, setExpanded] = useState("1");
       
     return (
