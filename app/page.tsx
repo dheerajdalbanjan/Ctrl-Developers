@@ -1,7 +1,6 @@
 import Features from "./_components/Features"
 import Hero from "./_components/Hero"
 import Mockup from "./_components/Mockup"
-import Navbar from "./_components/Navbar"
 import Numbers from "./_components/Numbers";
 import Work from "./_components/Work";
 
