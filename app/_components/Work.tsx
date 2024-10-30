@@ -48,10 +48,10 @@ const Work = () => {
                                         <img src={`/project/projects-${i + 1}.png`} className='object-fill group-hover:scale-105 transition-transform duration-300' />
                                         <div className='absolute bottom-0 flex flex-col space-y-2 left-0 w-full sm:h-1/4 h-1/2 sm:py-8 px-6 bg-gradient-to-t from-primary to-transparent'>
                                             <Badge variant={'secondary'} className='w-fit sm:text-base rounded-full shadow-md'>{projects[i].name}</Badge>
-                                            <p className='text-background sm:text-lg'>{projects[i].description}</p>
+                                            <p className='text-background text-sm sm:text-lg'>{projects[i].description}</p>
                                             <div className='flex space-x-1'>
                                             {projects[i].tags.map((tag, index) => (
-                                                <Badge key={index} variant={'outline'} className='w-fit text-xs sm:text-sm rounded-full text-background shadow-md'>{tag}</Badge>
+                                                <Badge key={index} variant={'outline'} className='w-fit  sm:text-sm rounded-full text-background shadow-md'>{tag}</Badge>
                                             ))}
                                             </div>
                                         </div>
