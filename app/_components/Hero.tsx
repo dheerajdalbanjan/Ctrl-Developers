@@ -13,8 +13,8 @@ const Hero = () => {
                     <span className='h-20 sm:h-[4.5rem] w-3.5 sm:w-10 bg-secondary'></span>
                     <span className='h-20 sm:h-[4.5rem] w-1.5 sm:w-6 bg-secondary'></span>
                 </div>
-                <Button className=' !rounded-full items-center flex text-center !px-3 bg-primary text-background'>Lets Talk <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
-            ' /></Button>
+                <a href="/contact"><Button className=' !rounded-full items-center flex text-center !px-3 bg-primary text-background'>Lets Talk <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
+            ' /></Button></a>
             </div>
         </div>
     )

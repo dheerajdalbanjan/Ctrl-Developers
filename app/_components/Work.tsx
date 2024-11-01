@@ -33,11 +33,11 @@ const Work = () => {
         }
     ];
     return (
-        <div className='mx-4 xl:mx-auto max-w-7xl py-5 flex flex-col space-y-2 '>
+        <div id='work' className='mx-4 xl:mx-auto max-w-7xl py-5 flex flex-col space-y-2 '>
             <h4 className='text-center sm:text-3xl sm:font-bold uppercase font-semibold'>Take a look at some of our work</h4>
             <p className='text-center sm:text-xl max-w-5xl mx-auto px-2'>Explore our creative portfolio, where innovation meets functionality. From sleek designs to efficient builds, our work speaks for itself.</p>
-            <Button className='w-fit mx-auto !rounded-full items-center flex text-center !px-3 bg-primary text-background'>All Projects <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
-            ' /></Button>
+            <a href="#work"><Button className='w-fit mx-auto !rounded-full items-center flex text-center !px-3 bg-primary text-background'>All Projects <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
+            ' /></Button></a>
 
             <Carousel className='py-5'>
                 <CarouselContent>
@@ -46,12 +46,12 @@ const Work = () => {
                                 <Card className='p-0 group rounded-lg overflow-hidden shadow-lg'>
                                     <CardContent className="relative flex p-0 aspect-video items-center justify-center ">
                                         <img src={`/project/projects-${i + 1}.png`} className='object-fill group-hover:scale-105 transition-transform duration-300' />
-                                        <div className='absolute bottom-0 flex flex-col space-y-2 left-0 w-full sm:h-1/4 h-1/2 sm:py-8 px-6 bg-gradient-to-t from-primary to-transparent'>
+                                        <div className='absolute bottom-0 flex flex-col space-y-1 left-0 w-full py-4 sm:py-8 px-6 bg-gradient-to-t from-primary to-transparent'>
                                             <Badge variant={'secondary'} className='w-fit sm:text-base rounded-full shadow-md'>{projects[i].name}</Badge>
                                             <p className='text-background text-sm sm:text-lg'>{projects[i].description}</p>
                                             <div className='flex space-x-1'>
                                             {projects[i].tags.map((tag, index) => (
-                                                <Badge key={index} variant={'outline'} className='w-fit  sm:text-sm rounded-full text-background shadow-md'>{tag}</Badge>
+                                                <Badge key={index} variant={'outline'} className='w-fit scale-90 sm:scale-100  sm:text-sm rounded-full text-background shadow-md'>{tag}</Badge>
                                             ))}
                                             </div>
                                         </div>

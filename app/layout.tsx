@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${space.className} antialiased bg-background `}
+        className={`${space.className} antialiased bg-background scroll-smooth `}
       >
         <Navbar />
         {children}

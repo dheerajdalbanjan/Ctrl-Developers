@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       name: 'Work',
-      link: '/work'
+      link: '/#work'
     },
     {
       name: 'Contact',
@@ -52,9 +52,9 @@ const Navbar = () => {
           </SheetContent>
         </Sheet>
 
-        <div className='w-28 overflow-hidden h-20 flex items-center'>
+        <a href='/' className='w-28 overflow-hidden h-20 flex items-center'>
           <img src="/ctrl-logo.svg" alt="logo" className='  mix-blend-multiply' />
-        </div>
+        </a>
       </div>
 
       <div className='flex items-center space-x-4 justify-center'>
@@ -68,8 +68,8 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <Button className=' !rounded-full items-center flex text-center !px-3 bg-primary text-background'>Try for free <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
-            ' /></Button>
+        <a href="/contact?reason=Offer"><Button className=' !rounded-full items-center flex text-center !px-3 bg-primary text-background'>Try for free <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
+            ' /></Button></a>
       </div>
 
 

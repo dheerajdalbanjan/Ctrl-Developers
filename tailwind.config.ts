@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			background: '#EBECF0',
-  			foreground: 'hsl(var(--foreground))',
-  			primary: '#2C313F',
-  			secondary: '#5AC4FF',
+			background: '#EBECF0',
+			foreground: 'hsl(var(--foreground))',
+			primary: '#2C313F',
+			secondary: '#5AC4FF',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -74,6 +74,6 @@ const config: Config = {
   		}
   	}
   },
-  
+    plugins: [require("tailwindcss-animate")]
 };
 export default config;
