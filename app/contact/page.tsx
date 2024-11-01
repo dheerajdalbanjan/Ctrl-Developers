@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { z, } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -61,6 +61,7 @@ const Page = () => {
     }
 
     return (
+        <Suspense>
         <div className='mx-4 py-6 xl:mx-auto max-w-7xl'>
 
             <Card className='bg-zinc-100 max-w-4xl mx-auto'>
@@ -169,6 +170,7 @@ const Page = () => {
             </Card>
 
         </div>
+        </Suspense>
     )
 }
 
