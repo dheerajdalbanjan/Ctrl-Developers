@@ -1,8 +1,10 @@
+"use client"
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { ArrowRight } from 'lucide-react'
+import Autoplay  from 'embla-carousel-autoplay'
 
 const Work = () => {
 
@@ -39,7 +41,7 @@ const Work = () => {
             <a href="#work"><Button className='w-fit mx-auto !rounded-full items-center flex text-center !px-3 bg-primary text-background'>All Projects <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
             ' /></Button></a>
 
-            <Carousel className='py-5'>
+            <Carousel className='py-5' plugins={[Autoplay({ delay: 3000 })] } opts={{loop:true}}>
                 <CarouselContent>
                     {Array(4).fill(0).map((_, i) => (
                         <CarouselItem key={i} className='w-fit h-fit'>

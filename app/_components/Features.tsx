@@ -68,8 +68,8 @@ const Features = () => {
             <div className='bg-neutral-100 rounded-2xl shadow-md p-6 sm:p-8 flex flex-col space-y-2'>
                 <h4 className='text-2xl sm:max-w-[40%] sm:text-3xl  font-semibold antialiased' >Lets make things happen</h4>
                 <p className='sm:max-w-[40%]' >Contact us today to learn more about how our web tech services can help your business grow and succeed online by providing your first website for FREE!</p>
-                <Button className='sm:max-w-[40%] !rounded-full items-center !py-5 mt-2 flex text-center !px-3 bg-primary text-background'>Get your free website <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
-            ' /></Button>
+                <a href="/contact?reason=Offer"><Button className='sm:max-w-[40%] !rounded-full items-center !py-5 mt-2 flex text-center !px-3 bg-primary text-background'>Get your free website <ArrowRight className='-rotate-45 bg-secondary rounded-full ml-1 scale-150  p-0.5
+            ' /></Button></a>
             </div>
         </div>
     )

@@ -119,8 +119,8 @@ const Page = () => {
                             <FormItem>
                                 <FormLabel>Reason</FormLabel>
                                 <FormControl>
-                                    <Select {...field} value={field.value} onValueChange={field.onChange}>
-                                        <SelectTrigger className="w-[180px]">
+                                    <Select  {...field} value={field.value} onValueChange={field.onChange}>
+                                        <SelectTrigger className="">
                                             <SelectValue placeholder="Select your reason" />
                                         </SelectTrigger>
                                         <SelectContent>

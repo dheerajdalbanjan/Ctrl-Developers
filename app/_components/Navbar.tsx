@@ -43,7 +43,7 @@ const Navbar = () => {
             </SheetHeader>
             <div className='flex flex-col space-y-3 py-5'>
               {navItems.map((item, i) =>
-                <a key={i} href={item.link}><Button variant={'ghost'}
+                <a key={i} href={item.link}><Button onClick={()=>setOPen(false)} variant={'ghost'}
                   className='text-2xl text-primary/90 relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:rounded-full hover:bg-background/60 before:h-0.5 before:bg-primary/80 !px-0 before:transition-width before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0'
                 >
                   {item.name}

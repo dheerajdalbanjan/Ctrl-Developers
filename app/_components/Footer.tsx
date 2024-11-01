@@ -39,8 +39,8 @@ const Footer = () => {
 
         <div className='flex flex-col space-y-1 text-background items-center'>
             <h4 className='bg-secondary w-fit rounded-lg text-primary px-3 py-1'>Contact Us</h4>
-            <p>Email: <span>ctrldevelopers4@gmail.com</span></p>
-            <p>Phone: <span>+91 63620 58230</span></p>
+            <p>Email: <a href='mailto:info.ctrldevelopers@gmail.com'>info.ctrldevelopers@gmail.com</a></p>
+            <p>Phone: <a href='tel:+916362058230'>+91 63620 58230</a></p>
         </div>
     </div>
     </div>
