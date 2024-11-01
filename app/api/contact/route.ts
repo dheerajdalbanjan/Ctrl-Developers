@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
   const mailOptions = {
     from: data.email,
-    to: 'ctrldevelopers04@gmail.com',
+    to: 'ctrldevelopers4@gmail.com',
     subject: `Customer contact: ${data.reason}`,
     text: JSON.stringify(data)
   };
